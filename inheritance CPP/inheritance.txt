@@ -1,0 +1,47 @@
+1) inheritance helps in reusability of code.
+2) reusing classes helps saving time and money.
+3) reusing already tested code will save effort in debugging 
+the code.
+4) the existing class is called BASE CLASS 
+5) the new class which inherits the features of BASE CLASS
+is called DERIVED CLASS.
+6) there are different types of ionheritance.
+***********************************************************
+                 (types of inheritance in c++)
+
+-> multiple inheritance - a derived class with more than one base class.
+-> single inheritance - a deriverd class with 0one base class.
+-> hierarchical inheritance - derived classes from one base class.
+-> multilevel inheritance - deriving a several class for already a derived class.
+-> hybrid inheritance - combination of multiple and multilevel inheritance
+
+/* for a protected member:
+                          <public declaration>   <private decl>      <protected decl>
+1) private members -->    not inherited          not inherited       not inherited
+2) protected members -->  protected              private             protected
+3) public members -->     public                 private             protected
+*/
+**************************************************************
+                {{{constructors in derived class}}}
+1) if base class constructor does not have any args
+   then there isno need to make different constructor 
+   in derived class.
+2) if there are one or more args in base class constructor
+   then the derived class constructor need to pass args to
+   the base class constructor.
+3) if both base and derived class have constructors then 
+   base class constructor is executed first.
+4) in multiple inheritance,base classes are constructed in 
+   the order of declaration.
+   **class A : public B, public C{
+    **in class A constructor of B will get executed first**
+   }
+5) in multilevel inheritance,the constructors are executed
+   in order of inheritance.
+*******constructors in virtual base class******************
+1) constructors for virtual base class are invoked before non
+   virtual base class.
+2) if there are multiple virtual base classe sthen constructors
+   are invoked in order of declaration.
+3) any non-virtual base class are then constructed before
+   the derived class constructor is executed. 
