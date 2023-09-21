@@ -1,0 +1,11 @@
+STL ---> containers + algorithms + iterators
+            |             |              |
+            |             |              |
+    objects which     procedure to     objects which points
+    stores data       process data     to an element of a 
+                                       containers
+
+types of conatiners --->
+1) sequence conatiners --> linear fashion --> vectors,list,dequeue
+2) associated conatiners --> direct access --> set\multiset, map\multimap
+3) derived conatiners --> real world modelling --> stack,queue,priority queue
