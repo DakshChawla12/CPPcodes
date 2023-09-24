@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//*****quick sprt using recursion*********
 int partition(int arr[], int s, int e){
 
     int pivot = arr[s];
