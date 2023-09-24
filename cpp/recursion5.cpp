@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//*****merge sort using recursion*******
 void merge(int arr[],int s,int e){
 
 
